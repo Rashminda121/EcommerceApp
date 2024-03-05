@@ -27,6 +27,8 @@ class OnboardingScreen extends StatelessWidget {
         children: [
           ///Horizontal Scroll Page
           PageView(
+            controller: controller.pageController,
+            onPageChanged: controller.updatePageIndicator,
             children: const [
               OnboardingPage(
                 image: TImages.onboard1,
