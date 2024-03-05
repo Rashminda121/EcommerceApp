@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/features/authentication/controllers/onboarding_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -19,7 +20,7 @@ class OnboardingNextButton extends StatelessWidget {
       right: TSizes.defaultSpace,
       bottom: TDeviceUtils.getBottomNavigationBarHeight(),
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () => OnBoardingController.instance.nextPage(),
         style: ElevatedButton.styleFrom(shape: CircleBorder(), backgroundColor: dark ? TColors.primaryColor : Colors.black),
         child: const Icon(Iconsax.arrow_right_3),
       ),
