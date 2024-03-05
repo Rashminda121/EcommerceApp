@@ -12,8 +12,7 @@ class TAppTheme {
   TAppTheme._();
 
   //light theme
-  static ThemeData lightTheme =
-      ThemeData(
+  static ThemeData lightTheme = ThemeData(
         useMaterial3: true,
         fontFamily: 'Poppins',
         brightness: Brightness.light,
@@ -28,7 +27,7 @@ class TAppTheme {
         outlinedButtonTheme: TOutlineButtonTheme.lightOutlineButtonTheme,
         inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
 
-      );
+  );
 
   //dark theme
   static ThemeData darkTheme = ThemeData(
