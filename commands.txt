@@ -1,3 +1,5 @@
 flutter pub get
 flutter pub upgrade
 flutter pub run flutter_native_splash:create --path=splash.yaml
+flutter pub upgrade --major-versions
+flutter pub run flutter_native_splash:remove //to remove splash
