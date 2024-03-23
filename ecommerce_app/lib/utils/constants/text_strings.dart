@@ -32,6 +32,7 @@ class TTexts {
   static const String verificationCode="verificationCode";
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend email in";
+  static const String tContinue = "Continue";
 
 
 
@@ -48,4 +49,9 @@ class TTexts {
   static const String emailNotReceivedMessage = "Didn't get the email? Check your junk/spam or resend it.";
   static const String yourAccountCreatedTitle = "Your account successfully created!";
   static const String yourAccountCreatedSubTitle = "Welcome to Your Ultimate Shopping Destination: Your Account is Created";
+
+
+
+
+
 }
