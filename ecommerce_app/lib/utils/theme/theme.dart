@@ -13,20 +13,19 @@ class TAppTheme {
 
   //light theme
   static ThemeData lightTheme = ThemeData(
-        useMaterial3: true,
-        fontFamily: 'Poppins',
-        brightness: Brightness.light,
-        primaryColor: Colors.blue,
-        scaffoldBackgroundColor: Colors.white,
-        textTheme:TTextTheme.lightTextTheme,
-        chipTheme: TChipTheme.lightCheckboxTheme,
-        appBarTheme: TAppBarTheme.lightAppBarTheme,
-        checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
-        bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
-        elevatedButtonTheme: TelavatedButtonTheme.lightElavatedButtonTheme,
-        outlinedButtonTheme: TOutlineButtonTheme.lightOutlineButtonTheme,
-        inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
-
+    useMaterial3: true,
+    fontFamily: 'Poppins',
+    brightness: Brightness.light,
+    primaryColor: Colors.blue,
+    scaffoldBackgroundColor: Colors.white,
+    textTheme: TTextTheme.lightTextTheme,
+    chipTheme: TChipTheme.lightCheckboxTheme,
+    appBarTheme: TAppBarTheme.lightAppBarTheme,
+    checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
+    bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
+    elevatedButtonTheme: TelavatedButtonTheme.lightElavatedButtonTheme,
+    outlinedButtonTheme: TOutlineButtonTheme.lightOutlineButtonTheme,
+    inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
   );
 
   //dark theme
@@ -36,7 +35,7 @@ class TAppTheme {
     brightness: Brightness.dark,
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.black,
-    textTheme:TTextTheme.darkTextTheme,
+    textTheme: TTextTheme.darkTextTheme,
     chipTheme: TChipTheme.darkCheckboxTheme,
     appBarTheme: TAppBarTheme.darkAppBarTheme,
     checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
