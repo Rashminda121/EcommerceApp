@@ -33,6 +33,9 @@ class TTexts {
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend email in";
   static const String tContinue = "Continue";
+  static const String submit = "Submit";
+  static const String done = "Done";
+
 
 
 
