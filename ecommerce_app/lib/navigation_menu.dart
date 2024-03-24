@@ -4,7 +4,6 @@ import 'package:ecommerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';
-import 'package:get_storage/get_storage.dart';
 import 'package:iconsax/iconsax.dart';
 
 class NavigationMenu extends StatelessWidget {
@@ -26,11 +25,11 @@ class NavigationMenu extends StatelessWidget {
           indicatorColor: darkMode ? TColors.white.withOpacity(0.1) : TColors.black.withOpacity(0.1),
 
 
-          destinations: [
-            const NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
-            const NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),
-            const NavigationDestination(icon: Icon(Iconsax.heart), label: 'Wishlist'),
-            const NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
+          destinations: const [
+            NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
+            NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),
+            NavigationDestination(icon: Icon(Iconsax.heart), label: 'Wishlist'),
+            NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
           ],
         ),
       ),
