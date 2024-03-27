@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:ecommerce_app/common/widgets/custom_shapes/container/circular_container.dart';
+import 'package:ecommerce_app/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_ctegories.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/promo_slider.dart';
@@ -76,7 +77,7 @@ class HomeScreen extends StatelessWidget {
                   TPromoSlider(banners: [TImages.promobanner,TImages.promobanner2,TImages.promobanner3],),
 
                   ///popular products
-                  
+                  TProductCardVertical(),
 
                 ],
               ),
