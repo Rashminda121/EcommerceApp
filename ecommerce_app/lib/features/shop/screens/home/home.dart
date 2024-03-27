@@ -1,14 +1,18 @@
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:ecommerce_app/common/widgets/custom_shapes/container/circular_container.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_ctegories.dart';
 import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../../../common/widgets/custom_shapes/container/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/container/search_container.dart';
 import '../../../../common/widgets/image_text_widgets/vertical_image_text.dart';
+import '../../../../common/widgets/images/t_rounded_image.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
@@ -19,11 +23,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            TPrimaryheaderContainer(
+            const TPrimaryheaderContainer(
               child: Column(
                 children: [
                   ///App Bar
@@ -58,12 +62,39 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+
+            ///body
+
+            Padding(
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              child: Column(
+                children: [
+                  CarouselSlider(
+                    options: CarouselOptions(viewportFraction: 1),
+                    items: const [
+                      TRoundedImage(imageUrl: TImages.promobanner),
+                      TRoundedImage(imageUrl: TImages.promobanner2),
+                      TRoundedImage(imageUrl: TImages.promobanner3),
+                    ],
+                  ),
+                  const SizedBox(height: TSizes.spaceBtwItems),
+                  Row(
+                    children: [
+                      for (int i = 0; i < 3; i++)
+                        const TCirculateContainer(
+                          width: 20,
+                          height: 4,
+                          margin: EdgeInsets.only(right: 10),
+                          backgroundColor: Colors.green,
+                        ),
+                    ],
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
-
-
-
