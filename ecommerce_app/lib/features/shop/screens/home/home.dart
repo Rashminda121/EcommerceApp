@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../../../common/widgets/custom_shapes/container/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/container/search_container.dart';
+import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/device/device_utility.dart';
@@ -17,7 +18,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -36,7 +37,21 @@ class HomeScreen extends StatelessWidget {
 
                   /// categories
 
-                  
+                  Padding(
+                    padding: EdgeInsets.only(left: TSizes.defaultSpace),
+                    child: Column(
+                      children: [
+                        ///heading
+                        TSectionHeading(title: 'Popular Categories',showActionButton: false),
+                        SizedBox(height: TSizes.spaceBtwItems),
+
+                        ///categories
+
+                        
+
+                      ],
+                    ),
+                  ),
 
 
                 ],
@@ -48,6 +63,8 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+
 
 
 
