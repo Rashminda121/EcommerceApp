@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:ecommerce_app/common/widgets/custom_shapes/container/circular_container.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:ecommerce_app/features/shop/screens/home/widgets/home_ctegories.dart';
+import 'package:ecommerce_app/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/cupertino.dart';
@@ -23,11 +24,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const TPrimaryheaderContainer(
+            TPrimaryheaderContainer(
               child: Column(
                 children: [
                   ///App Bar
@@ -66,29 +67,17 @@ class HomeScreen extends StatelessWidget {
             ///body
 
             Padding(
-              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              padding: EdgeInsets.all(TSizes.defaultSpace),
+
               child: Column(
                 children: [
-                  CarouselSlider(
-                    options: CarouselOptions(viewportFraction: 1),
-                    items: const [
-                      TRoundedImage(imageUrl: TImages.promobanner),
-                      TRoundedImage(imageUrl: TImages.promobanner2),
-                      TRoundedImage(imageUrl: TImages.promobanner3),
-                    ],
-                  ),
-                  const SizedBox(height: TSizes.spaceBtwItems),
-                  Row(
-                    children: [
-                      for (int i = 0; i < 3; i++)
-                        const TCirculateContainer(
-                          width: 20,
-                          height: 4,
-                          margin: EdgeInsets.only(right: 10),
-                          backgroundColor: Colors.green,
-                        ),
-                    ],
-                  )
+
+                  /// promo slider
+                  TPromoSlider(banners: [TImages.promobanner,TImages.promobanner2,TImages.promobanner3],),
+
+                  ///popular products
+                  
+
                 ],
               ),
             ),
@@ -98,3 +87,5 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+
