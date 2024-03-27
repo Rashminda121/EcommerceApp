@@ -85,7 +85,7 @@ class StoreScreen extends StatelessWidget {
                                       const TBrandTitleWithVerifiedIcon(title: 'Nike',brandTextSize: TextSizes.large),
                                   
                                       Text(
-                                        '256 products sample text large',
+                                        '256 products sample text',
                                         overflow: TextOverflow.ellipsis,
                                         style: Theme.of(context).textTheme.labelMedium,
                                       ),
