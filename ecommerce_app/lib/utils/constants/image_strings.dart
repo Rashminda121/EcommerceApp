@@ -22,7 +22,8 @@ class TImages {
   static const String verify = "assets/images/animations/sammy-line-travel-backpack-with-passport-and-air-ticket.gif";
   static const String deliverEmail = "assets/images/animations/sammy-line-man-receives-a-mail.png";
 
-
+  //Category Icons
+  static const String shoeIcon = "assets/icons/categories/sport-shoe.png";
 
 
 
