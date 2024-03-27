@@ -25,7 +25,9 @@ class TImages {
   //Category Icons
   static const String shoeIcon = "assets/icons/categories/sport-shoe.png";
 
-
-
+  //banner images
+  static const String promobanner= "assets/images/banners/banner.jpg";
+  static const String promobanner2= "assets/images/banners/banner2.jpg";
+  static const String promobanner3= "assets/images/banners/banner3.jpg";
 
 }
