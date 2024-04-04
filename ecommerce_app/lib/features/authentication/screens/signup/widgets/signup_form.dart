@@ -3,10 +3,8 @@ import 'package:ecommerce_app/features/authentication/screens/signup/widgets/ter
 import 'package:ecommerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
 
@@ -89,7 +87,7 @@ class TSignupForm extends StatelessWidget {
           const SizedBox(height: TSizes.spaceBtwInputFields),
 
           ///term condition
-          TTermsAndConditionCheckbox(),
+          const TTermsAndConditionCheckbox(),
           const SizedBox(height: TSizes.spaceBtwSections),
 
           ///Signup button
