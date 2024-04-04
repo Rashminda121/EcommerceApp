@@ -18,7 +18,7 @@ class TPrimaryheaderContainer extends StatelessWidget {
       child: SizedBox(
         height: 400,
         child: Container(
-          color: TColors.primaryColor,
+          color: TColors.primary,
           child: Stack(
             children: [
               Positioned(top: -150, right: -250, child: TCirculateContainer(backgroundColor: TColors.textWhite.withOpacity(0.1))),
