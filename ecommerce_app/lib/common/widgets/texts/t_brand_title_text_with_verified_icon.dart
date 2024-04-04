@@ -12,7 +12,7 @@ const TBrandTitleWithVerifiedIcon({
   this.textColor,
   this.maxLines = 1,
   required this.title,
-  this.iconColor = TColors.primaryColor,
+  this.iconColor = TColors.primary,
   this.textAlign = TextAlign.center,
   this.brandTextSize = TextSizes.small,
 });
