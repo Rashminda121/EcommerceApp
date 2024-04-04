@@ -10,7 +10,7 @@ class TColors{
 
   //Gradient Color
   static const Gradient linearGradient= LinearGradient(colors: [
-    Color(0)
+    Color(0x00000000)
   ]);
 
   //Text Color
