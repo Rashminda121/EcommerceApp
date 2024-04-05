@@ -37,6 +37,7 @@
     assets:
       - assets/logos/
       - assets/images/
+      - assets/images/user/
       - assets/images/banners/
       - assets/images/products/
       - assets/icons/categories/
