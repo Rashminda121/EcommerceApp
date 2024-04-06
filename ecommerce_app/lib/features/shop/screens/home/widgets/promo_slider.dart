@@ -34,7 +34,7 @@ class TPromoSlider extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 for (int i = 0; i < banners.length; i++)
-                  TCirculateContainer(
+                  TCircularContainer(
                       width: 20,
                       height: 4,
                       margin: const EdgeInsets.only(right: 10),
