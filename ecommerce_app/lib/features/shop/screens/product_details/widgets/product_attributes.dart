@@ -79,11 +79,23 @@ class TProductAttributes extends StatelessWidget {
         const SizedBox(height: TSizes.spaceBtwItems),
 
         ///atributes
-        const Column(
+        Column(
           children: [
             TSectionHeading(title: 'Colors'),
             SizedBox(height: TSizes.spaceBtwItems / 2),
-            TChoiceChip(text: 'Green',selected: true),
+            TChoiceChip(text: 'Green',selected: true ,onSelected: (value){}),
+            TChoiceChip(text: 'Blue',selected: false,onSelected: (value){}),
+            TChoiceChip(text: 'Red',selected: false,onSelected: (value){}),
+          ],
+        ),
+
+        Column(
+          children: [
+            TSectionHeading(title: 'Size'),
+            SizedBox(height: TSizes.spaceBtwItems / 2),
+            TChoiceChip(text: 'EU 34',selected: true,onSelected: (value){}),
+            TChoiceChip(text: 'EU 36',selected: false,onSelected: (value){}),
+            TChoiceChip(text: 'EU 38',selected: false,onSelected: (value){}),
           ],
         ),
 
