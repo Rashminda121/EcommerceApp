@@ -19,8 +19,8 @@ class TPrimaryheaderContainer extends StatelessWidget {
         color: TColors.primary,
         child: Stack(
           children: [
-            Positioned(top: -150, right: -250, child: TCirculateContainer(backgroundColor: TColors.textWhite.withOpacity(0.1))),
-            Positioned(top: 100, right: -300, child: TCirculateContainer(backgroundColor: TColors.textWhite.withOpacity(0.081))),
+            Positioned(top: -150, right: -250, child: TCircularContainer(backgroundColor: TColors.textWhite.withOpacity(0.1))),
+            Positioned(top: 100, right: -300, child: TCircularContainer(backgroundColor: TColors.textWhite.withOpacity(0.081))),
             child,
           ],
         ),
