@@ -65,10 +65,10 @@ class ProductDetailScreen extends StatelessWidget {
                     trimMode: TrimMode.Line,
                     trimCollapsedText: 'Show More',
                     trimExpandedText: 'Show less',
-                  )
+                  ),
 
                 /// - Reviews
-                  const SizedBox (height: TSizes.spaceBtwSections),
+                  const SizedBox(height: TSizes.spaceBtwSections),
                 ],
               ),
             )
