@@ -5,7 +5,6 @@ import 'package:ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/helpers/helper_functions.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../common/widgets/chips/choice_chip.dart';
@@ -26,8 +25,8 @@ class TProductAttributes extends StatelessWidget {
               ///title,price and stock status
               Row(
                 children: [
-                  TSectionHeading(title: 'Variation',showActionButton: false),
-                  SizedBox(width: TSizes.spaceBtwItems),
+                  const TSectionHeading(title: 'Variation',showActionButton: false),
+                  const SizedBox(width: TSizes.spaceBtwItems),
 
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,7 +34,7 @@ class TProductAttributes extends StatelessWidget {
 
                       Row(
                         children: [
-                          TProductTitleText(title: 'Price: ',smallSize: true),
+                          const TProductTitleText(title: 'Price: ',smallSize: true),
 
                           /// Actual Price
                           Text(
@@ -44,10 +43,10 @@ class TProductAttributes extends StatelessWidget {
                               decoration: TextDecoration.lineThrough,
                             ),
                           ),
-                          SizedBox(width: TSizes.spaceBtwItems),
+                          const SizedBox(width: TSizes.spaceBtwItems),
 
                           ///sale price
-                          TProductPriceText(price: '20'),
+                          const TProductPriceText(price: '20'),
                         ],
                       ),
 
@@ -83,8 +82,8 @@ class TProductAttributes extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            TSectionHeading(title: 'Colors' ,showActionButton: false,),
-            SizedBox(height: TSizes.spaceBtwItems / 2),
+            const TSectionHeading(title: 'Colors' ,showActionButton: false,),
+            const SizedBox(height: TSizes.spaceBtwItems / 2),
             Wrap(
               spacing: 8,
               children: [
@@ -104,8 +103,8 @@ class TProductAttributes extends StatelessWidget {
             Wrap(
               spacing: 8,
               children: [
-                TSectionHeading(title: 'Size',showActionButton: false,),
-                SizedBox(height: TSizes.spaceBtwItems / 2),
+                const TSectionHeading(title: 'Size',showActionButton: false,),
+                const SizedBox(height: TSizes.spaceBtwItems / 2),
                 TChoiceChip(text: 'EU 34',selected: true,onSelected: (value){}),
                 TChoiceChip(text: 'EU 36',selected: false,onSelected: (value){}),
                 TChoiceChip(text: 'EU 38',selected: false,onSelected: (value){}),
