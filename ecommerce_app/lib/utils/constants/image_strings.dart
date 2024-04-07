@@ -21,6 +21,8 @@ class TImages {
   static const String staticSuccess = "assets/images/animations/sammy-line-man-received-a-certificate.png";
   static const String verify = "assets/images/animations/sammy-line-travel-backpack-with-passport-and-air-ticket.gif";
   static const String deliverEmail = "assets/images/animations/sammy-line-man-receives-a-mail.png";
+  static const String paymentSuccess = "assets/images/animations/icons8-correct.gif";
+
 
   //Category Icons
   static const String shoeIcon = "assets/icons/categories/sport-shoe.png";
@@ -31,8 +33,23 @@ class TImages {
   static const String promobanner3= "assets/images/banners/banner3.jpg";
 
   //product images
-  static const String product1= "assets/images/products/sport-shoe.png";
+  static const String product1= "assets/images/products/shoe.jpg";
+  static const String product2= "assets/images/products/sport-shoe.png";
 
   //user images
   static const String user= "assets/images/user/profile-user.png";
+
+  //product reviews
+  static const String profile1= "assets/images/reviews/profile1.png";
+  static const String profile2= "assets/images/reviews/profile2.png";
+  static const String profile3= "assets/images/reviews/profile3.png";
+
+  //payment
+  static const String paypal= "assets/images/payment/paypal.png";
+  static const String visa= "assets/images/payment/visa.png";
+  static const String masterCard= "assets/images/payment/mastercard.jpeg";
+  static const String creditCard= "assets/images/payment/creditcard.jpeg";
+  static const String applePay= "assets/images/payment/applepay.jpeg";
+  static const String gPay= "assets/images/payment/gpay.jpeg";
+
 }
