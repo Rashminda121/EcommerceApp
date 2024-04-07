@@ -20,6 +20,7 @@ dependencies:
 
   #---product specific----#
   readmore: ^3.0.0
+  flutter_rating_bar: ^4.0.1
 
   #---Icons----#
   iconsax: ^0.0.8
@@ -44,6 +45,8 @@ flutter:
   assets:
     - assets/logos/
     - assets/images/
+    - assets/images/payment/
+    - assets/images/reviews/
     - assets/images/user/
     - assets/images/banners/
     - assets/images/products/
