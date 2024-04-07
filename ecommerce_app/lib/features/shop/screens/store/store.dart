@@ -3,6 +3,8 @@ import 'package:ecommerce_app/common/widgets/custom_shapes/container/search_cont
 import 'package:ecommerce_app/common/widgets/layouts/grid_layout.dart';
 import 'package:ecommerce_app/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import '../../../../common/widgets/appbar/appbar.dart';
 import '../../../../common/widgets/brands/brand_card.dart';
 import '../../../../common/widgets/products/cart/cart_menu_icon.dart';
@@ -10,6 +12,7 @@ import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/helpers/helper_functions.dart';
+import '../brand/all_brands.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -54,7 +57,7 @@ class StoreScreen extends StatelessWidget {
 
                           ///featured brands
                           TSectionHeading(
-                              title: 'Featured Brands', onPressed: () {}),
+                              title: 'Featured Brands', onPressed: ()=>Get.to(()=>const AllBrandsScreen())),
                           const SizedBox(height: TSizes.spaceBtwItems / 1.5),
 
                           TGridLayout(
