@@ -1,5 +1,4 @@
 import 'package:ecommerce_app/utils/constants/sizes.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -17,7 +16,7 @@ class TSingleAddress extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return TRoundedContainer(
-      padding: EdgeInsets.all(TSizes.md),
+      padding: const EdgeInsets.all(TSizes.md),
       showBorder: true,
         width: double.infinity,
         backgroundColor: selectedAddress ?TColors.primary.withOpacity(0.5): Colors.transparent,
