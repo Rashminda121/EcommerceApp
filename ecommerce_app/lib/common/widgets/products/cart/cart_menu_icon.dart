@@ -1,10 +1,13 @@
+import 'package:ecommerce_app/features/shop/screens/cart/cart.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../utils/constants/colors.dart';
 
-class TCartCountericon extends StatelessWidget {
-  const TCartCountericon({
+class TCartCounterIcon extends StatelessWidget {
+  const TCartCounterIcon({
     super.key, required this.onPressed,  this.iconColor,
   });
 
@@ -15,7 +18,7 @@ class TCartCountericon extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        IconButton(onPressed: onPressed, icon: Icon(Iconsax.shopping_bag,color: iconColor,)),
+        IconButton(onPressed: ()=>Get.to(()=>const CartScreen()), icon: Icon(Iconsax.shopping_bag,color: iconColor,)),
         Positioned(
           right: 0,
           child: Container(
