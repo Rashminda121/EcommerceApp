@@ -1,10 +1,8 @@
 import 'package:ecommerce_app/features/personalization/screens/address/widgets/single_address.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../../../common/styles/rounded_container.dart';
 import '../../../../common/widgets/appbar/appbar.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
@@ -28,7 +26,7 @@ class UserAdressScreen extends StatelessWidget {
 
       body: const SingleChildScrollView(
         child: Padding (
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
+          padding: EdgeInsets.all(TSizes.defaultSpace),
           child: Column (
             children: [
                 TSingleAddress(selectedAddress: false),
