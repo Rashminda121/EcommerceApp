@@ -1,6 +1,3 @@
-import 'package:ecommerce_app/common/widgets/appbar/appbar.dart';
-import 'package:ecommerce_app/common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
-import 'package:ecommerce_app/common/widgets/images/t_rounded_image.dart';
 import 'package:ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce_app/features/shop/screens/product_details/widgets/bottom_add_to_cart.dart';
 import 'package:ecommerce_app/features/shop/screens/product_details/widgets/product_attributes.dart';
@@ -8,18 +5,12 @@ import 'package:ecommerce_app/features/shop/screens/product_details/widgets/prod
 import 'package:ecommerce_app/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:ecommerce_app/features/shop/screens/product_details/widgets/rating_share_widget.dart';
 import 'package:ecommerce_app/features/shop/screens/product_reviews/product_reviews.dart';
-import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
-import '../../../../common/widgets/icons/t_circular_icon.dart';
-import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/helpers/helper_functions.dart';
 
 class ProductDetailScreen extends StatelessWidget {
@@ -29,29 +20,29 @@ class ProductDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return Scaffold(
-      bottomNavigationBar: TBottomAddToCart(),
+      bottomNavigationBar: const TBottomAddToCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
             /// product image slider
-            TProductImageSlider(),
+            const TProductImageSlider(),
 
             ///product details
             Padding(
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                   right: TSizes.defaultSpace,
                   left: TSizes.defaultSpace,
                   bottom: TSizes.defaultSpace),
               child: Column(
                 children: [
                   /// Rating & Share
-                  TRatingAndShare(),
+                  const TRatingAndShare(),
 
                   /// - Price, Title, Stock, & Brand
-                  TProductMetaData(),
+                  const TProductMetaData(),
 
                   /// -- Attributes
-                  TProductAttributes(),
+                  const TProductAttributes(),
                   const SizedBox(height: TSizes.spaceBtwSections),
 
                   /// -- Checkout Button
